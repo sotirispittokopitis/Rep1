@@ -1,0 +1,65 @@
+{
+  "id": 11,
+  "result": {
+    "Account": "r3J5WiRzJW3PvnsagpXVM8x7MVNucC7Dqm",
+    "Amount": "1000000",
+    "Destination": "rHimx7SqBaugMDeJsUQm6ybJQPrzkASpgx",
+    "Fee": "12",
+    "Flags": 0,
+    "LastLedgerSequence": 40401491,
+    "Sequence": 40004546,
+    "SigningPubKey": "ED7EEB28A67433799C3E8BBEDAA0EE86F2A56C788E2D1DE306299890D2F3EA7CD9",
+    "TransactionType": "Payment",
+    "TxnSignature": "BA412B71462022DD8E7A4F063B21817003BB3246F315C8C8361E7236B14CFA843FE62FC63940FDA4867E280DE9D3D8F69B886795EC3C297EFA927111B8825304",
+    "date": 745527310,
+    "hash": "6C168DDBDA669038C6CC7B47725A712B59069598142803EEB6DDAB507ADE61B4",
+    "inLedger": 40401473,
+    "ledger_index": 40401473,
+    "meta": {
+      "AffectedNodes": [
+        {
+          "ModifiedNode": {
+            "FinalFields": {
+              "Account": "r3J5WiRzJW3PvnsagpXVM8x7MVNucC7Dqm",
+              "Balance": "10031999640",
+              "Flags": 0,
+              "OwnerCount": 0,
+              "Sequence": 40004547
+            },
+            "LedgerEntryType": "AccountRoot",
+            "LedgerIndex": "2E3E0E3951C0EAFC5B20E774E4E46E10EA0F5B7ACFF102DB9735DC6ABB72B036",
+            "PreviousFields": {
+              "Balance": "10032999652",
+              "Sequence": 40004546
+            },
+            "PreviousTxnID": "E578F00813C579D52508EB99D97D5CB4A9BA379234398D6BBF0B82D2CCCC6AC1",
+            "PreviousTxnLgrSeq": 40401371
+          }
+        },
+        {
+          "ModifiedNode": {
+            "FinalFields": {
+              "Account": "rHimx7SqBaugMDeJsUQm6ybJQPrzkASpgx",
+              "Balance": "10006000000",
+              "Flags": 0,
+              "OwnerCount": 0,
+              "Sequence": 40401366
+            },
+            "LedgerEntryType": "AccountRoot",
+            "LedgerIndex": "7692E3B2A705A55DB1C58AE99DD9D5BB7B57DC522BD49AA630FA25DFF9C32197",
+            "PreviousFields": {
+              "Balance": "10005000000"
+            },
+            "PreviousTxnID": "E578F00813C579D52508EB99D97D5CB4A9BA379234398D6BBF0B82D2CCCC6AC1",
+            "PreviousTxnLgrSeq": 40401371
+          }
+        }
+      ],
+      "TransactionIndex": 0,
+      "TransactionResult": "tesSUCCESS",
+      "delivered_amount": "1000000"
+    },
+    "validated": true
+  },
+  "type": "response"
+}
