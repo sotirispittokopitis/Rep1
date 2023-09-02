@@ -25,9 +25,11 @@ Install the circom binary:
 ```bash
 cargo install --path circom
 ```
-
-
-
+## Installing snarkjs
+**Step 1:**  
+```bash
+npm install -g snarkjs
+```
 
 
 
