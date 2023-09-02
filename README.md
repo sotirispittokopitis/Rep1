@@ -4,7 +4,7 @@ ZKP on XRPL
 # Overview of the Project:
 
 # Table of Contents
-1. [Overview](#Overview-of-the-Project:)
+1. [Overview of the Project](#overview)
 2. [Required Installations](#required-installations)
 
 # Required Installations
