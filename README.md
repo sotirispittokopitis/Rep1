@@ -10,9 +10,9 @@
 
 For this project, we introduce a strategy to integrate Zero-Knowledge Proofs (ZKPs) within the XRP Ledger (XRPL) with the goal of verifying the transactions on XRP Ledger without leaking any useful information. Since the XRP Ledger currently does not offer support for Zero-Knowledge Proofs (ZKPs) we provide further details on the structure we use to emulate the EdDSA operations that the XRP Ledger currently uses, specifically on the ed255519 elliptic curve. Furthermore, we implement the following three computations:
 
-a. Confirm that the sender has a high enough XRP balance to send the payment.
-b. Confirm that the destination address is different than the sender address.
-c. Confirm that the signature is valid.
+- a. Confirm that the sender has a high enough XRP balance to send the payment.
+- b. Confirm that the destination address is different than the sender address.
+- c. Confirm that the signature is valid.
 
 The model of the system described uses already existing libraries to implement Zero-Knowledge Proofs (ZKPs) to validate transactions on a smaller scale representation of the XRP Ledger. The system is evaluated in terms of the privacy results we achieve, as well as the total time taken for compiling the circuits and validating the proof. 
 
