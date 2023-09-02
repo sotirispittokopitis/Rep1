@@ -32,8 +32,8 @@ npm install -g snarkjs
 ```
 ## Installing Circom-Lib
 **Step 1:**  
-```bash
 Clone the “Circom” repository:
+```bash
 git clone --recurse-submodules https://github.com/iden3/circomlib/tree/master
 ```
 
