@@ -1,5 +1,10 @@
 # Rep1
 ZKP on XRPL
+
+
+# Table of Contents
+1. [Required Installations](#required-installations)
+
 # Required Installations
 
 Instructions can be found at:
