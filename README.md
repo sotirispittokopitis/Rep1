@@ -1,9 +1,11 @@
 # Rep1
 ZKP on XRPL
 
+# Overview of the Project:
 
 # Table of Contents
-1. [Required Installations](#required-installations)
+1. [Overview](#Overview-of-the-Project:)
+2. [Required Installations](#required-installations)
 
 # Required Installations
 
