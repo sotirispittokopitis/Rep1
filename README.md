@@ -1,5 +1,5 @@
 # ZKP on XRPL
-- Use existing crypto libraries to implement ZKP for XRP payment transactions. 
+- Use existing libraries to implement ZKP for XRP payment transactions. 
 
 # Table of Contents
 1. [Overview of the Project](#Overview-of-the-Project)
