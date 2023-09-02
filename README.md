@@ -8,6 +8,12 @@
 
 # Overview of the Project:
 
+- Use existing crypto libraries to implement ZKP for direct XRP payment transactions. 
+- For each transaction, XPRL needs to verify that the transaction is valid. In this project, you need to implement ZKP to verify the transaction on XRPL without leaking any useful information. 
+	- In particular, you are required to implement the following three computations. 
+		-      a. Confirm that the sender has a high enough XRP balance to send the payment.
+		-      b. Confirm that the destination address is different than the sender address.
+		-      c. Confirm that the signature is valid
 
 # Required Installations:
 
