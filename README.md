@@ -14,8 +14,7 @@ For this project, we introduce a strategy to integrate Zero-Knowledge Proofs (ZK
 - Confirm that the destination address is different than the sender address.
 - Confirm that the signature is valid.
 
-The model of the system described uses already existing libraries to implement Zero-Knowledge Proofs (ZKPs) to validate transactions on a smaller scale representation of the XRP Ledger. The system is evaluated in terms of the privacy results we achieve, as well as the total time taken for compiling the circuits and validating the proof. 
-
+Disclaimer: The following implementations are for demonstration purposes only. Furthermore, the circuits are not audited, and should not be used for production-grade applications at their current state.
 
 # Required Installations:
 
