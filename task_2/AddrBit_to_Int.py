@@ -1,5 +1,8 @@
 from xrpl.core.addresscodec import decode_classic_address
 import json
+# links:
+# https://xrpl-py.readthedocs.io/en/stable/source/xrpl.core.addresscodec.html
+#
 
 address1 = 'rEhVrA7fNgfsFB9R9ZoWJA22HaYuUX2hdt'
 address2 = 'r3J5WiRzJW3PvnsagpXVM8x7MVNucC7Dqm'
