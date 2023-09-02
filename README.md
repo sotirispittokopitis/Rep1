@@ -30,6 +30,23 @@ cargo install --path circom
 ```bash
 npm install -g snarkjs
 ```
+## Installing Circom-Lib
+**Step 1:**  
+```bash
+Clone the “Circom” repository:
+git clone --recurse-submodules https://github.com/iden3/circomlib/tree/master
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
