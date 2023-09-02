@@ -9,3 +9,6 @@ Instructions can be found at:
 ## Installing Circom
 **Step 1:**  
 Clone the “Circom” repository:
+```bash
+git clone --recurse-submodules https://github.com/iden3/circom.git
+```
