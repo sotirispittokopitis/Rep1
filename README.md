@@ -1,13 +1,15 @@
 # Rep1
-ZKP on XRPL
+# ZKP on XRPL
+
+
+# Table of Contents
+1. [Overview of the Project](#Overview-of-the-Project)
+2. [Required Installations](#required-installations)
 
 # Overview of the Project:
 
-# Table of Contents
-1. [Overview of the Project](#overview)
-2. [Required Installations](#required-installations)
 
-# Required Installations
+# Required Installations:
 
 Instructions can be found at:
 - [Circom Documentation](https://docs.circom.io/getting-started/installation/)
