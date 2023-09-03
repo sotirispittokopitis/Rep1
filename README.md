@@ -4,6 +4,8 @@
 # Table of Contents
 1. [Overview of the Project](#Overview-of-the-Project)
 2. [Required Installations](#required-installations)
+3. [Running the Code](#running-the-code)
+4. [Time Benchmarks](#time-Benchmarks)
 
 
 # Overview of the Project:
@@ -53,10 +55,11 @@ Clone the “Circom” repository:
 git clone --recurse-submodules https://github.com/iden3/circomlib/tree/master
 ```
 
+# Running the Code:
 
 
 
-
+# Time Benchmarks:
 
 |                                | Time Taken (s) - Circuit 1 | Time Taken (s) - Circuit 2 | Time Taken (s) - Circuit 3 |
 |--------------------------------|----------------------------|----------------------------|----------------------------|
