@@ -58,6 +58,27 @@ git clone --recurse-submodules https://github.com/iden3/circomlib/tree/master
 
 
 
+|                                | Time Taken (s) - Circuit 1 | Time Taken (s) - Circuit 2 | Time Taken (s) - Circuit 3 |
+|--------------------------------|----------------------------|----------------------------|----------------------------|
+| Compiling Circuit              | 0                          | 0                          | 1                          |
+| Exporting R1CS to JSON         | 1                          | 1                          | 0                          |
+| Generating Witness             | 0                          | 0                          | 0                          |
+| Exporting Witness to JSON      | 0                          | 0                          | 1                          |
+| Generating New Powers of Tau   | 1                          | 1                          | 0                          |
+| Contributing To Powers of Tau  | 3                          | 3                          | 5                          |
+| Preparing Phase 2              | 27                         | 28                         | 31                         |
+| Generating ZKey 0              | 2                          | 1                          | 1                          |
+| Generating ZKey 1              | 1                          | 1                          | 2                          |
+| Exporting Verification Key     | 1                          | 1                          | 1                          |
+| Generating Proof               | 0                          | 0                          | 0                          |
+| Verifying ZKey                 | 2                          | 2                          | 2                          |
+| Total Time                     | ~39s                       | ~38s                       | ~44s                       |
+
+
+
+
+
+
 
 
 
