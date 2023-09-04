@@ -4,34 +4,31 @@ import binascii
 import os
 # code from:
 # https://realpython.com/python-sockets/
-
+# (further referencing required)
 import os
 import socket
 import time
 
 def send_file(filename, conn):
-    # get the file size
     file_size = os.path.getsize(filename)
-    # send the file size followed by a newline character
     conn.sendall(f"{file_size}\n".encode())
     time.sleep(0.5)
-    # send the file data
     with open(filename, 'rb') as f:
         conn.sendall(f.read())
 
 def start_client(files_to_send):
-    HOST = "127.0.0.1"
-    PORT = 65432
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.connect((HOST, PORT))
+    part1 = socket.AF_INET
+    part2 = socket.SOCK_STREAM
+    with socket.socket(part1, part2) as server:
+        server.bind(('127.0.0.1', 65432))
         for filename in files_to_send:
-            send_file(filename, s)
+            send_file(filename, server)
         print("All files sent")
 
 if __name__ == "__main__":
-    file1 = "../new2/circuit/proof.json"
-    file2 = "../new2/circuit/public.json"
-    file3 = "../new2/circuit/verification_key.json"
+    file1 = "../task_3/circuit/proof.json"
+    file2 = "../task_3/circuit/public.json"
+    file3 = "../task_3/circuit/verification_key.json"
 
     files = [file1, file2, file3]
     start_client(files)

@@ -1,5 +1,5 @@
 #!/bin/bash
-# The idea is taken from the following links:
+# The idea/ code is taken from the following links:
 # https://github.com/0xPARC/circom-ecdsa
 # https://www.guru99.com/introduction-to-shell-scripting.html
 echo "-------------------------------------------------------"

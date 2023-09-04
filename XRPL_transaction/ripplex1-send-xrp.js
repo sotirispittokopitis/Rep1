@@ -4,6 +4,8 @@
 // The code for "ripplex1-send-xrp.js" and "1.get-accounts-send-xrp.html"
 // ...are taken from the git repository and modified:
 // https://github.com/XRPLF/xrpl-dev-portal
+// (further referencing required)
+
 function getNet() {
   let net
   if (document.getElementById("tn").checked) net = "wss://s.altnet.rippletest.net:51233"
