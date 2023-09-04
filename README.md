@@ -56,7 +56,8 @@ git clone --recurse-submodules https://github.com/iden3/circomlib/tree/master
 ```
 
 # Running the Code:
-- task_1 & task_2: They each have a `build.py` file
+- task_1 & task_2: They each have a `build.py` file. When running the Python file, it will generate and verify a ZKP
+- task_3: There are two python files that can be run. The first one is `build.py` and the second one is `build_python.py`, where the former will generate and verify the ZKP, while the latter will run a server-clent environment, run EDDSA operations, as well as generate and verify the ZKP 
 
 
 # Time Benchmarks:
