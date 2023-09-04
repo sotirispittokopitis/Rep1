@@ -29,7 +29,7 @@ Address_Data = {
     'sender_Address_1': add_bigInt1,
     'destination_Address_2': add_bigInt2
 }
-with open('/Users/sotirispittokopitis/PycharmProjects/SpartanTest_151/test2/input_task2.json', 'w') as f:
+with open('../task_2/input.json', 'w') as f:
     json.dump(Address_Data, f)
 
 
