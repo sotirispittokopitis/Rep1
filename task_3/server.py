@@ -1,4 +1,3 @@
-
 import socket
 import subprocess
 import os
@@ -13,6 +12,7 @@ def start_server():
     part1 = socket.AF_INET
     part2 = socket.SOCK_STREAM
     with socket.socket(part1, part2) as server:
+        server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
         server.bind(('127.0.0.1', 65432))
         server.listen()
         conn, addr = server.accept()

@@ -13374,7 +13374,7 @@ local.get $lvar
 i32.const 0
 i32.add
 local.set $expaux
-i32.const 160
+i32.const 240
 call $reserveStackFr
 local.set $cstack
 ;; start of the template code
@@ -13673,6 +13673,13 @@ i32.add
 local.get $expaux
 i32.const 0
 i32.add
+;; value bucket
+i32.const 8024
+;; end of value bucket
+;; compute bucket
+local.get $expaux
+i32.const 80
+i32.add
 ;; load bucket
 ;; value bucket
 i32.const 0
@@ -13719,6 +13726,12 @@ i32.add
 ;; end of load bucket
 ;; OP(MUL)
 call $Fr_mul
+local.get $expaux
+i32.const 80
+i32.add
+;; end of compute bucket
+;; OP(SUB)
+call $Fr_sub
 local.get $expaux
 i32.const 0
 i32.add

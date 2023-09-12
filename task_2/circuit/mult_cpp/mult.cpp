@@ -208,7 +208,7 @@ u32* mySubcomponents = ctx->componentMemory[ctx_index].subcomponents;
 bool* mySubcomponentsParallel = ctx->componentMemory[ctx_index].subcomponentsParallel;
 FrElement* circuitConstants = ctx->circuitConstants;
 std::string* listOfTemplateMessages = ctx->listOfTemplateMessages;
-FrElement expaux[2];
+FrElement expaux[4];
 FrElement lvar[0];
 uint sub_component_aux;
 uint index_multiple_eq;
@@ -252,8 +252,9 @@ IsEqual_1_run(mySubcomponents[cmp_index_ref],ctx);
 {
 PFrElement aux_dest = &signalValues[mySignalStart + 0];
 // load src
+Fr_sub(&expaux[0],&circuitConstants[1],&ctx->signalValues[ctx->componentMemory[mySubcomponents[0]].signalStart + 0]); // line circom 14
 // end load src
-Fr_copy(aux_dest,&ctx->signalValues[ctx->componentMemory[mySubcomponents[0]].signalStart + 0]);
+Fr_copy(aux_dest,&expaux[0]);
 }
 for (uint i = 0; i < 1; i++){
 uint index_subc = ctx->componentMemory[ctx_index].subcomponents[i];

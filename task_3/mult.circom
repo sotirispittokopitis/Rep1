@@ -17,7 +17,8 @@ template circuitTask3() {
     isEqual_py.in[0] <== p1_1;
     isEqual_py.in[1] <== p2_1;
 
-    validation <== isEqual_px.out * isEqual_py.out;
+    validation <== 1 - (isEqual_px.out * isEqual_py.out);
+
 }
 
 component main = circuitTask3();
