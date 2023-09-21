@@ -14,7 +14,7 @@ echo "-------------------------------------------------------"
 echo ">>Step_1:"
 echo ">>Start Server..."
 python server.py &
-sleep 4
+sleep 2
 echo "-------------------------------------------------------"
 echo ">>Step_2:"
 echo ">>Client connects..."

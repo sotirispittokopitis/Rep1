@@ -12,6 +12,11 @@ TARGET_DIR="$SCRIPT_DIR/circuit"
 mkdir -p $TARGET_DIR
 time_sum=0
 echo "-------------------------------------------------------"
+echo ">>(Activity Monitor start:A ...)"
+python3 Activity_Monitor_Graph.py &
+sleep 2
+echo ">>(Activity Monitor start:B ...)"
+sleep 3
 echo ">>Compiling Circuit"
 start=`date +%s`
 circom $SCRIPT_DIR/$CIRCUIT_NAME.circom --r1cs --wasm --sym --c --wat --output "$TARGET_DIR"
@@ -124,3 +129,4 @@ echo ">>Step Completed:"
 echo "Time:($((end-start)) s)"
 echo "-------------------------------------------------------"
 echo ">>Total Time Taken: $time_sum s"
+
