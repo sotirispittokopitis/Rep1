@@ -6,23 +6,15 @@ import json
 # https://www.color-hex.com
 # https://towardsdatascience.com/visualizing-cpu-memory-and-gpu-utilities-with-python-8028d859c2b0
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html
-
+# ---------------------
 list_CPU = []
 list_M = []
 iterate = []
-
-json_path = '../task_3/data1.json'
-
-
-def save_to_json(cpu_data, memory_data, iteration_data):
-    data = {
-        "CPU": cpu_data,
-        "Memory": memory_data,
-        "Iteration": iteration_data
-    }
-    with open(json_path, 'w') as f:
-        json.dump(data, f)
-
+# ---------------------
+cpu_data = 0
+memory_data = 0
+iteration_data = 0
+# ---------------------
 try:
     fig = matplotlib.pyplot.figure()
     Axes = fig.add_subplot()
@@ -49,8 +41,13 @@ try:
             Axes.legend()
 
             matplotlib.pyplot.pause(0.05)
-            save_to_json(list_CPU, list_M, iterate)
-
+            data = {
+                "CPU": cpu_data,
+                "Memory": memory_data,
+                "Iteration": iteration_data
+            }
+            with open('../task_3/data1.json', 'w') as f:
+                json.dump(data, f)
         time.sleep(1)
 
 except KeyboardInterrupt:

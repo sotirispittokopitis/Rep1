@@ -1,15 +1,20 @@
 import matplotlib.pyplot
 import time
 import psutil
+import json
 # references:
 # https://www.color-hex.com
 # https://towardsdatascience.com/visualizing-cpu-memory-and-gpu-utilities-with-python-8028d859c2b0
 # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html
-
+# ---------------------
 list_CPU = []
 list_M = []
 iterate = []
-
+# ---------------------
+cpu_data = 0
+memory_data = 0
+iteration_data = 0
+# ---------------------
 try:
     fig = matplotlib.pyplot.figure()
     Axes = fig.add_subplot()
@@ -36,7 +41,13 @@ try:
             Axes.legend()
 
             matplotlib.pyplot.pause(0.05)
-
+            data = {
+                "CPU": cpu_data,
+                "Memory": memory_data,
+                "Iteration": iteration_data
+            }
+            with open('../task_3/data1.json', 'w') as f:
+                json.dump(data, f)
         time.sleep(1)
 
 except KeyboardInterrupt:
