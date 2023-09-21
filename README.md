@@ -76,6 +76,7 @@ git clone --recurse-submodules https://github.com/iden3/circomlib/tree/master
 | Exporting Verification Key     | 1                          | 1                          | 1                          |
 | Generating Proof               | 0                          | 0                          | 0                          |
 | Verifying ZKey                 | 2                          | 2                          | 2                          |
+| Verifying Proof                | 1                          | 0                          | 1                          |
 | Total Time                     | ~39s                       | ~38s                       | ~45s                       |
 
 
